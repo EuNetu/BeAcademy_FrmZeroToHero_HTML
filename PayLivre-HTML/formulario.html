@@ -1,4 +1,4 @@
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
   <fieldset name="contato">
     <legend>Preencha o formulário de contato</legend>
   </fieldset>
@@ -75,6 +75,18 @@
     <label for="no">Não</label>
     <input type="radio" id="no" checked name="notification" value="no">
 
+    <label for="teacher">Professores:</label>
+    <select name="select-teacher" id="teacher" multiple size="4">
+      <option value="">Selecione um professor</option>
+      <option value="Luan Souza">Luan Souza</option>
+      <option value="Moacir Garcia">Moacir Garcia</option>
+      <option value="Jenifer Vieira">Jenifer Vieira</option>
+      <option value="Regis Santos">Regis Santos</option>
+    </select>
+
+    <input type="search" name="" placeholder="faça uma pesquisa" pattern="[0-9]{0,3}" title="Busque por id de até três digitos" required>
+
+    <input type="file" accept="image/*" multiple>
     <br>
     <button type="submit">Enviar</button>
   </fieldset>
